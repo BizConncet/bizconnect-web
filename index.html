@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizConnect — Kolaborasi Generasi Muda</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="BizConnect" class="logo">
+      <span class="brand-name">BizConnect</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">Tentang</a>
+      <a href="#features">Fitur</a>
+      <a href="#showcase">Idea Showcase</a>
+      <a href="#contact">Kontak</a>
+      <button id="navbar-login-btn" class="btn primary">Login / Daftar</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner container">
+    <h1>BizConnect</h1>
+    <p class="subtitle">Jembatan Kolaborasi Generasi Muda Menuju Ekonomi Kreatif Digital</p>
+    <p class="lead">Bergabung, temukan rekanmu, dan wujudkan ide bisnismu.</p>
+    <div class="cta">
+      <button id="btn-join" class="btn primary">Daftar Gratis</button>
+      <a href="#showcase" class="btn outline">Lihat Idea Showcase</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container section">
+  <h2>Deskripsi Singkat</h2>
+  <p>BizConnect menghubungkan pelajar & mahasiswa untuk kolaborasi bisnis melalui fitur matchmaking, mentor, dan event.</p>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="container section">
+  <h2>Fitur Utama</h2>
+  <ul class="features-grid">
+    <li><img src="assets/icon-team.svg" alt=""><strong>Team Matchmaking</strong><p>Cari rekan berdasarkan skill & minat.</p></li>
+    <li><img src="assets/icon-idea.svg" alt=""><strong>Idea Showcase</strong><p>Unggah ide, dapatkan feedback.</p></li>
+    <li><img src="assets/icon-mentor.svg" alt=""><strong>Mentor Room</strong><p>Konsultasi dengan mentor berpengalaman.</p></li>
+    <li><img src="assets/icon-event.svg" alt=""><strong>BizEvent</strong><p>Workshop & kompetisi rutin.</p></li>
+  </ul>
+</section>
+
+<!-- MODAL LOGIN -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2>Masuk / Daftar Akun</h2>
+    <input type="email" id="authEmail" placeholder="Email" required>
+    <input type="password" id="authPassword" placeholder="Password" required>
+    <button id="modal-register-btn" class="btn primary">Daftar</button>
+    <button id="modal-login-btn" class="btn primary">Login</button>
+  </div>
+</div>
+
+<!-- IDEA SHOWCASE -->
+<section id="showcase" class="container section">
+  <h2>Idea Showcase</h2>
+  <div id="ideas-list">Belum ada ide, submit ide kamu di bawah!</div>
+
+  <h3>Submit Ide</h3>
+  <form id="idea-form">
+    <input type="text" id="idea-title" placeholder="Judul Ide" required>
+    <textarea id="idea-desc" placeholder="Deskripsi singkat" required></textarea>
+    <input type="text" id="idea-tags" placeholder="Tags (pisah dengan koma)">
+    <button type="submit" class="btn primary">Kirim Ide</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container section">
+  <h2>Kontak</h2>
+  <p>Email: bizconnect.id@gmail.com</p>
+  <p>Telepon: 0858506600330</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; BizConnect — Tim Rebellious Students (MAN Sidoarjo)</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
